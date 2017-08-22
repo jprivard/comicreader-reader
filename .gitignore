@@ -1,0 +1,16 @@
+.idea
+comicreader-web.iml
+public/*
+
+/reader/dist
+/reader/tmp
+/reader/node_modules
+/reader/bower_components
+/reader/.sass-cache
+/reader/connect.lock
+/reader/coverage/*
+/reader/libpeerconnection.log
+/readernpm-debug.log*
+/readertestem.log
+
+!public/.gitkeep

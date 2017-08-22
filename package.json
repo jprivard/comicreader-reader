@@ -6,8 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "preweb-build": "rm -rf public/* && cd reader/ && ember build -prod && cp -R dist/* ../public",
-    "web-build": "docker image build -t comicreader-web .",
-    "web-start": "docker run --network libapi --rm --name nginx -p 4200:80 comicreader-web"
+    "web-build": "docker image build -t comicreader-reader .",
+    "web-start": "docker run --network libapi --rm --name nginx -p 4200:80 comicreader-reader",
+    "web-publish": "docker tag comicreader-reader jprivard/comicreader-reader:$VERSION",
+    "postweb-publish": "docker push jprivard/comicreader-reader"
   },
   "author": "",
   "license": "ISC"

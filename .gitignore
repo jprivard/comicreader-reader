@@ -10,7 +10,7 @@ public/*
 /reader/connect.lock
 /reader/coverage/*
 /reader/libpeerconnection.log
-/readernpm-debug.log*
-/readertestem.log
+/reader/npm-debug.log*
+/reader/testem.log
 
 !public/.gitkeep

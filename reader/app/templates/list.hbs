@@ -1,7 +1,10 @@
 <h2>List of books!</h2>
 
 {{#each model as |book|}}
-    <p>{{book.id}}: {{book.name}}</p>
+    {{#link-to "book" book.id}}
+        <p>{{book.name}} by {{book.author}}</p>
+        <img src="{{rootURL}}/img/{{book.thumbnail}}"/>
+    {{/link-to}}
 {{/each}}
 
 {{outlet}}
